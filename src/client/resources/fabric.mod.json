@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "urlmusicdiscs",
 	"version": "${version}",
-	"name": "URL Music Discs",
-	"description": "Adds a writeable music disc, allowing you to customize the music that plays from any youtube link.",
+	"name": "URL Music Discs Compat",
+	"description": "Allows you to join Url-Music-Discs servers without having a windows device",
 	"authors": [
 		"Hoofer"
 	],
@@ -15,23 +15,13 @@
 	"icon": "assets/urlmusicdiscs/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"urlmusicdiscs.URLMusicDiscs"
-		],
 		"client": [
 			"urlmusicdiscs.URLMusicDiscsClient"
 		]
 	},
-	"mixins": [
-		"urlmusicdiscs.mixins.json",
-		{
-			"config": "urlmusicdiscs.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
-		"fabricloader": ">=0.15.7",
-		"minecraft": "~1.20.4",
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20",
 		"java": ">=17",
 		"fabric-api": "*"
 	}
